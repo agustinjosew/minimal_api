@@ -13,6 +13,20 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+if (app.Environment.IsStaging())
+{
+    // TBD
+}
+if (app.Environment.IsProduction())
+{
+    // TBD
+}
+
+// We can define additional environments, and you can check your custom environment with the following code:
+if (app.Environment.IsEnvironment("TestEnviroment"))
+{
+    // TBD
+}
 
 app.UseHttpsRedirection();
 
