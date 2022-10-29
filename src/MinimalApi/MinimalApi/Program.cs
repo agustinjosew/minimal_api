@@ -22,6 +22,12 @@ if (app.Environment.IsProduction())
     // TBD
 }
 
+// We can define additional environments, and you can check your custom environment with the following code:
+if (app.Environment.IsEnvironment("TestEnviroment"))
+{
+    // TBD
+}
+
 app.UseHttpsRedirection();
 
 var summaries = new[]
